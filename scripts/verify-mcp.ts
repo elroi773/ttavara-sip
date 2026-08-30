@@ -2,6 +2,7 @@ import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 import type { CallToolResult } from '@modelcontextprotocol/sdk/types.js';
 
+
 // Read-only smoke check for local or cloudflared endpoints.
 const endpoint = new URL(process.argv[2] ?? 'http://127.0.0.1:3000/mcp');
 const client = new Client({ name: 'ttavara-sip-verifier', version: '1.0.0' });
