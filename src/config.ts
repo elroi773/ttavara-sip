@@ -9,6 +9,8 @@ const configSchema = z.object({
   ALLOWED_ORIGINS: z.string().default(''),
 });
 
+
+
 export function readConfig(env: NodeJS.ProcessEnv = process.env) {
   const parsed = configSchema.safeParse(env);
   if (!parsed.success) {
