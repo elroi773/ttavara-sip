@@ -9,6 +9,7 @@ type Row = Omit<Recipe, 'modifiers' | 'tasteKeywords' | 'tags'> & {
   modifiers: string; tasteKeywords: string; tags: string;
 };
 
+
 function decode(row: unknown): Recipe {
   const value = row as Row;
   return recipeSchema.parse({
