@@ -8,6 +8,8 @@ function rpcError(res: Response, status: number, message: string, code = -32000)
   res.status(status).json({ jsonrpc: '2.0', id: null, error: { code, message } });
 }
 
+
+
 export function createApp(store: RecipeStore, config: Config) {
   const app = express();
   app.disable('x-powered-by');
