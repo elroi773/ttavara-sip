@@ -2,6 +2,7 @@ import { readConfig } from './config.js';
 import { RecipeStore } from './database.js';
 import { createApp } from './http.js';
 
+
 try {
   const config = readConfig();
   const store = new RecipeStore(config.databasePath);
