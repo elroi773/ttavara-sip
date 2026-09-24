@@ -8,6 +8,7 @@ export const queryTasteSchema = z.enum([...tasteKeywords, '랜덤'], {
   error: 'tasteKeyword는 달콤쌉싸름, 시원상콤, 고소담백, 깔끔시원, 랜덤 중 하나여야 합니다.',
 });
 
+
 export function textSchema(label: string, max: number) {
   return z.string({ error: `${label}: 문자열을 입력해 주세요.` }).trim()
     .min(1, `${label}: 공백이 아닌 값을 입력해 주세요.`)
