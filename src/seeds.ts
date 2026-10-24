@@ -1,6 +1,7 @@
 import type { CreateRecipeInput } from './schemas.js';
 
 type Seed = Omit<CreateRecipeInput, 'authorName'>;
+
 // These combinations are illustrative, not reviews, menu availability, or order guarantees.
 export const exampleRecipes: readonly Seed[] = [
   {
