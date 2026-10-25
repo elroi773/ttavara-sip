@@ -9,6 +9,7 @@ import {
   normalCandidateSchema, partyAssignmentSchema, partySchema,
 } from './schemas.js';
 
+
 class ToolError extends Error {
   constructor(readonly code: string, message: string, readonly issues?: { path: string; message: string }[]) { super(message); }
 }
