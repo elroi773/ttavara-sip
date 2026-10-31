@@ -20,6 +20,7 @@ function decode(row: unknown): Recipe {
   });
 }
 
+
 export class RecipeStore {
   private readonly db: Database.Database;
 
