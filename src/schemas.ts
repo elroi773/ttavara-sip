@@ -16,6 +16,7 @@ export function textSchema(label: string, max: number) {
     .regex(/^[^\u0000-\u001f\u007f]*$/u, `${label}: 제어 문자는 사용할 수 없습니다.`);
 }
 
+
 export const modifierSchema = z.strictObject({
   category: textSchema('옵션 종류', 40),
   name: textSchema('옵션 이름', 80),
